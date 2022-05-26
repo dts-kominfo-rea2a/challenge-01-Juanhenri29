@@ -1,8 +1,8 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
-const firstUser = new Map();
-const secondUser = new Map();
+const firstUser = new Object();
+const secondUser = new Object();
 
 // Data Structure For First User
   // First User Favorite Color
@@ -20,14 +20,14 @@ const secondUser = new Map();
   const firstEducation = [firstEducation0, firstEducation1, firstEducation2];
 
   // Push Data Ke FirstUser Map
-  firstUser.set("name", "Monica");
-  firstUser.set("gender", "Female");
-  firstUser.set("age", "17");
-  firstUser.set("email", "monica@dingdong.com");
-  firstUser.set("favoriteColor", firstColor);
-  firstUser.set("isHavePet", "Yes");
-  firstUser.set("education", firstEducation);
-  firstUser.set("favoriteRestaurant", firstRestaurant);
+  firstUser.name = "Monica";
+  firstUser.gender = "Female";
+  firstUser.age = "17";
+  firstUser.email = "monica@dingdong.com";
+  firstUser.favoriteColor = firstColor;
+  firstUser.isHavePet = "Yes";
+  firstUser.education = firstEducation;
+  firstUser.favoriteRestaurant = firstRestaurant;
 
 // Data Structure For Second User
   // First User Favorite Color
@@ -46,14 +46,14 @@ const secondUser = new Map();
   const secondEducation = [secondEducation0, secondEducation1, secondEducation2, secondEducation3];
 
   // Push Data Ke FirstUser Map
-  secondUser.set("name", "Wendy");
-  secondUser.set("gender", "Male");
-  secondUser.set("age", "23");
-  secondUser.set("email", "wendy@dingdong.com");
-  secondUser.set("favoriteColor", secondColor);
-  secondUser.set("isHavePet", "No");
-  secondUser.set("education", secondEducation);
-  secondUser.set("favoriteRestaurant", secondRestaurant);
+  secondUser.name = "Wendy";
+  secondUser.gender = "Male";
+  secondUser.age = "23";
+  secondUser.email = "wendy@dingdong.com";
+  secondUser.favoriteColor = secondColor;
+  secondUser.isHavePet = "No";
+  secondUser.education = secondEducation;
+  secondUser.favoriteRestaurant = secondRestaurant;
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
