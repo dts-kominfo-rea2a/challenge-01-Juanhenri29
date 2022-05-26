@@ -5,14 +5,6 @@ const firstUser = new Object();
 const secondUser = new Object();
 
 // Data Structure For First User
-  // First User Favorite Color
-  const firstColor = new Set();
-  firstColor.add("Yellow").add("Pink").add("White").add("Purple");
-
-  // First User Favorite Restaurant
-  const firstRestaurant = new Set();
-  firstRestaurant.add("Bento").add("Sushi").add("Pancake").add("Eggy").add("Tempura").add("Bento").add("Eggy").add("Padang").add("Tteok").add("Sushi").add("Sushi");
-
   // First User Education
   const firstEducation0 = {name: "SD 01", city: "Jakarta", graduate: "2016"};
   const firstEducation1 = {name: "SMP 02", city: "Jakarta", graduate: "2019"};
@@ -24,20 +16,12 @@ const secondUser = new Object();
   firstUser.gender = "Female";
   firstUser.age = "17";
   firstUser.email = "monica@dingdong.com";
-  firstUser.favoriteColor = firstColor;
+  firstUser.favoriteColor = [...new Set(["Yellow", "Pink", "White", "Purple"])];
   firstUser.isHavePet = "Yes";
   firstUser.education = firstEducation;
-  firstUser.favoriteRestaurant = firstRestaurant;
+  firstUser.favoriteRestaurant = [...new Set(["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"])];
 
 // Data Structure For Second User
-  // First User Favorite Color
-  const secondColor = new Set();
-  secondColor.add("Blue").add("Black").add("Grey");
-
-  // First User Favorite Restaurant
-  const secondRestaurant = new Set();
-  secondRestaurant.add("Tempura").add("Bento").add("Sushi").add("Pancake").add("Padang").add("Katsu").add("Geprek").add("Pancake").add("Eggy");
-
   // First User Education
   const secondEducation0 = {name: "SD 02", city: "Jakarta", graduate: "2010"};
   const secondEducation1 = {name: "SMP 03", city: "Bogor", graduate: "2013"};
@@ -50,10 +34,10 @@ const secondUser = new Object();
   secondUser.gender = "Male";
   secondUser.age = "23";
   secondUser.email = "wendy@dingdong.com";
-  secondUser.favoriteColor = secondColor;
+  secondUser.favoriteColor = [...new Set(["Blue", "Black", "Grey"])];
   secondUser.isHavePet = "No";
   secondUser.education = secondEducation;
-  secondUser.favoriteRestaurant = secondRestaurant;
+  secondUser.favoriteRestaurant = [...new Set(["Tempura", "Bento", "Sushi", "Pancake", "Katsu", "Geprek", "Pancake", "Eggy"])];
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
