@@ -37,7 +37,7 @@ const secondUser = new Object();
   secondUser.favoriteColor = [...new Set(["Blue", "Black", "Grey"])];
   secondUser.isHavePet = "No";
   secondUser.education = secondEducation;
-  secondUser.favoriteRestaurant = [...new Set(["Tempura", "Bento", "Sushi", "Pancake", "Katsu", "Geprek", "Pancake", "Eggy"])];
+  secondUser.favoriteRestaurant = [...new Set(["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"])];
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
